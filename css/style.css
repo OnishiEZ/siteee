@@ -4,8 +4,9 @@
 }
 
 header {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
+  padding-bottom: 10vw;
 }
 header h1 {
   font-family: HelveticaNeueLTProLt;
@@ -74,4 +75,60 @@ header nav ul a:hover {
 }
 header nav ul li.active a {
   color: #010101;
+}
+
+main .about {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw 170px 30vw;
+  grid-template-columns: repeat(2, 30vw);
+  -ms-grid-rows: 276px 170px 276px;
+  grid-template-rows: 276px 276px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 170px;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  background: url(../img/buildings__black_3164.png) center bottom repeat-x, #1d1d1d;
+}
+
+main .about > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+main .about > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+main .about > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+main .about .about__item {
+  background-color: #181818;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  padding: 0 1vw;
+}
+main .about .about__item .about__year {
+  font-family: HelveticaNeueLTProRoman;
+  font-size: 48px;
+  color: #fefefe;
+}
+main .about .about__item .about__text {
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  color: #b7b7b7;
 }

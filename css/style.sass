@@ -11,8 +11,9 @@
     margin: 0
     padding: 0
 header
-    width: 60%
+    width: 80%
     margin: 0 auto
+    padding-bottom: 10vw
     h1
         font-family: HelveticaNeueLTProLt
         font-size: 44px
@@ -47,9 +48,6 @@ header
         height: 57px
         border: 1px solid #000000
         margin-top: 44px 
-        
-
-
     nav
         ul
             display: grid
@@ -70,4 +68,32 @@ header
             li.active
                 a
                     color: #010101
+                
+main
+    .about
+        color: white
+        display: grid
+        grid-template-columns: repeat(2, 30vw)
+        grid-template-rows: 276px 276px 
+        justify-content: center
+        gap: 170px
+        padding-top: 10vh
+        padding-bottom: 20vh
+        background: url(../img/buildings__black_3164.png) center bottom repeat-x, #1d1d1d
+        .about__item
+            background-color: #181818
+            display: grid
+            align-content: center
+            text-align: center
+            padding: 0 1vw
+            .about__year
+                font-family: HelveticaNeueLTProRoman
+                font-size: 48px
+                color: #fefefe
+            .about__text
+                font-family: Montserrat-Light
+                font-size: 15px
+                color: #b7b7b7
+
                     
+
